@@ -1,0 +1,175 @@
+/* Estilos CSS fornecidos anteriormente */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.barra-superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.barra-pesquisa {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 8px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 16px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.categoria {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.categoria h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.janelinha-produto {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(33.33% - 40px);
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.janelinha-produto:hover {
+  transform: translateY(-5px);
+}
+
+.janelinha-produto img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.janelinha-produto h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.janelinha-produto p {
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.janelinha-produto .preco {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.botao-compra {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.janelinha-produto img {
+  width: 100%;
+  height: auto;
+  max-width: 100px; /* Defina o valor máximo desejado para a largura da imagem */
+  max-height: 200px; /* Defina o valor máximo desejado para a altura da imagem */
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.janelinha-produto {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 12px; /* Reduza o espaçamento interno superior e inferior */
+  margin-bottom: 20px;
+  width: calc(33.33% - 100px);
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+  height: 310px; /* Defina a altura desejada para a janelinha do produto */
+  overflow: hidden; /* Esconda qualquer conteúdo que exceda a altura definida */
+}
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+}
