@@ -62,8 +62,8 @@ nav ul li a {
 
 .categoria {
   width: 100%;
-  max-width: 900px;
-  margin-bottom: 40px;
+  max-width: 90vw;
+  margin: 2em auto;
 }
 
 .categoria h2 {
