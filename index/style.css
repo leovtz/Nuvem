@@ -330,3 +330,33 @@ footer {
   padding: 20px;
   text-align: center;
 }
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.janelinha-produto {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(33.33% - 40px);
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .janelinha-produto {
+    width: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .janelinha-produto {
+    width: calc(100% - 40px);
+    margin-right: 0;
+  }
+}
